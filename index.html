@@ -45,19 +45,33 @@ button {
 </style>   
 </head>    
 <body>    
-    <center> <h1> Student Login Form </h1> </center>   
+    <center> <h1> ID Information Form </h1> </center>   
     <form action="https://sheetdb.io/api/v1/d195bgxvj4k3s" method="post" id="sheetdb-form">  
         <div class="container">   
-            <label>Username : </label>   
-            <input type="text" placeholder="Enter Username" name="username" required>  
-            <label>Password : </label>   
-            <input type="password" placeholder="Enter Password" name="password" required>  
-            <button type="submit">Login</button>   
-            <input type="checkbox" checked="checked"> Remember me   
-            <button type="button" class="cancelbtn"> Cancel</button>   
-            Forgot <a href="#"> password? </a>   
+            <label>LRN : </label>   
+            <input type="number" placeholder="Enter LRN" name="LRN" required>  
+            <label>ZIP GRADE NO : </label>   
+            <input type="text" placeholder="Enter Scholarship" name="ZIP GRADE NO" required>
+            <label>BACK : </label>   
+            <input type="text" placeholder="SCHOOL YEAR" name="BACK" required>  
+            <label>NAME: </label>   
+            <input type="text" placeholder="ENTER FULLNAME" name="NAME" required>  
+            <label>GRADE/SECTION : </label>   
+            <input type="text" placeholder="Enter GRADE AND SECTION" name="GRADE/SECTION" required>  
+            <label>ADDRESS : </label>   
+            <input type="text" placeholder="ENTER ADDRESS" name="ADDRESS" required>  
+            <label>BIRTHDAY: </label>   
+            <input type="date" placeholder="ENTER BIRTHDAY" name="BIRTHDAY" required>  
+            <label>PERSON TO NOTIFY : </label>   
+            <input type="text" placeholder="GUARDIAN" name="PERSON TO NOTIFY" required>  
+            <label>CONTACT NO : </label>   
+            <input type="text" placeholder="GUARDIAN number" name="CONTACT NO" required>  
+            <label>GUARDIAN ADDRESS : </label>   
+            <input type="text" placeholder="GUARDIAN ADDRESS" name="GUARDIAN ADDRESS" required>    
+             
         </div>   
     </form>  
+
 <script>
 	var form = document.getElementById('sheedtdb-form');
 	form.addEventListener("submit", e =>{
@@ -65,13 +79,13 @@ button {
 	fetch(form.action, {
 	method: "POST",
 	body: new FormData(document. getElementById("sheetdb-form")),
-}).then(
+            }).then(
 	response => response.json()
-).then((html)>{
+    ).then((html)>{
 
-	window.open('index.html','_blank');
-});	
-});
+	           window.open('index.html','_blank');
+            });	
+    });
 </script>
 </body>     
 </html>  
