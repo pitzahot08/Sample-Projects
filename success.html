@@ -45,47 +45,7 @@ button {
 </style>   
 </head>    
 <body>    
-    <center> <h1> ID Information Form </h1> </center>   
-    <form action="https://sheetdb.io/api/v1/d195bgxvj4k3s" method="get" id="sheetdb-form">  
-        <div class="container">   
-            <label>LRN : </label>   
-            <input type="number" id="LRN" name="LRN" required>  
-            <label>ZIP GRADE NO : </label>   
-            <input type="text" id="ZIP GRADE NO" name="ZIP GRADE NO" required>
-            <label>BACK : </label>   
-            <input type="text" id="Current" name="BACK" required>  
-            <label>NAME: </label>   
-            <input type="text" id="NAME" name="NAME" required>  
-            <label>GRADE/SECTION : </label>   
-            <input type="text" id="GRADE/SECTION" name="GRADE/SECTION" required>  
-            <label>ADDRESS : </label>   
-            <input type="text" id="ADDRESS" name="ADDRESS" required>  
-            <label>BIRTHDAY: </label>   
-            <input type="date" id="BIRTHDAY" name="BIRTHDAY" required>  
-            <label>PERSON TO NOTIFY : </label>   
-            <input type="text" id="PERSON TO NOTIFY" name="PERSON TO NOTIFY" required>  
-            <label>CONTACT NO : </label>   
-            <input type="text" id="CONTACT NO" name="CONTACT NO" required>  
-            <label>GUARDIAN ADDRESS : </label>   
-            <input type="text" id="GUARDIAN ADDRESS" name="GUARDIAN ADDRESS" required>
-             <button type="submit">VIEW</button>    
-        </div>   
-    </form>  
-
-<script>
-	var form = document.getElementById('sheedtdb-form');
-	form.addEventListener("submit", e =>{
-	e.preventDefault();
-	fetch(form.action, {
-	method: "GET",
-	body: new FormData(document. getElementById("sheetdb-form")),
-            }).then(
-	response => response.json()
-    ).then((html)>{
-
-	           window.open('success.html','_blank');
-            });	
-    });
-</script>
+  <center> <h1> Successfully Registererd </h1> </center>   
+ 
 </body>     
 </html>  
