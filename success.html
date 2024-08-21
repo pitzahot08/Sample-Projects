@@ -68,13 +68,13 @@ button {
             <input type="text" placeholder="GUARDIAN number" name="CONTACT NO" required>  
             <label>GUARDIAN ADDRESS : </label>   
             <input type="text" placeholder="GUARDIAN ADDRESS" name="GUARDIAN ADDRESS" required>
-             <button type="view">VIEW</button>    
+             <button type="submit">VIEW</button>    
         </div>   
     </form>  
 
 <script>
 	var form = document.getElementById('sheedtdb-form');
-	form.addEventListener("View", e =>{
+	form.addEventListener("submit", e =>{
 	e.preventDefault();
 	fetch(form.action, {
 	method: "GET",
