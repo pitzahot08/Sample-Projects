@@ -78,15 +78,15 @@ button {
 	<center> <h1><strong> Note:</strong> Please ensure all details are correct. It will reflect to your identification card. </h1> </center> 	
 
 <script>
-	var form = document.getElementById('sheedtdb-form');
+	var form = document.getElementById('sheetdb-form');
 	form.addEventListener("submit", e =>{
 	e.preventDefault();
 	fetch(form.action, {
 	method: "POST",
-	body: new FormData(document. getElementById("sheetdb-form")),
+	body: new FormData(document.getElementById("sheetdb-form")),
             }).then(
 	response => response.json()
-    ).then((html)>{
+    ).then((html)=>{
 
 	           window.open('success.html','_blank');
             });	
