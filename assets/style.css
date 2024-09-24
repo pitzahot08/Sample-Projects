@@ -1,1 +1,153 @@
+* {
+  box-sizing: border-box;
+}
 
+body {
+  height: 100%;
+  font-family: Arial;
+  font-size: 17px;
+}
+h2 {
+  text-align: center;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+}
+
+h3 {
+  color: rgb(255, 255, 255);
+}
+
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}
+.row1 {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}
+/*.row1 {
+display: -ms-flexbox;
+display: flex;
+-ms-flex-wrap: wrap;
+flex-wrap: wrap;
+margin: 0 -16px;
+background-color: #034F1D;
+padding: 5px 20px 15px 20px;
+border: 1px solid lightgrey;
+border-radius: 20px;
+}*/
+
+.col-25 {
+  -ms-flex: 25%;
+  flex: 25%;
+}
+
+.col-50 {
+  -ms-flex: 50%;
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 75%;
+  flex: 75%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
+
+.container {
+  background-color: #09682a;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 20px;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="number"],
+select {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #cccc;
+  border-radius: 5px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+  color: white;
+}
+
+/*if you add icons inside the container*/
+/*.icon-container {
+margin-bottom: 20px;
+padding: 7px 0;
+font-size: 24px;
+}*/
+
+.btn {
+  background-color: #8dab7f;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+  transition: 0.8s ease;
+}
+
+.btn:hover {
+  background-color: lightgreen;
+  color: black;
+}
+
+a {
+  color: #2196f3;
+}
+
+hr {
+  border: 1px solid lightgrey;
+}
+
+/*span.price {
+float: right;
+color: grey;
+}
+*/
+@media (max-width: 800px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+  .col-25 {
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+
+  .container {
+    padding: 15px;
+  }
+}
+p {
+  color: #f8f2f3;
+  font-size: larger;
+}
+.bg-image {
+  background-image: url("../assets/img/cgci-bg2.png");
+  background: rgba(16, 165, 73, 0.334);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
